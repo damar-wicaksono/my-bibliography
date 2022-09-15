@@ -1,0 +1,70 @@
+@Article{Becker2020,
+  author   = {William Becker},
+  journal  = {Reliability Engineering {\&} System Safety},
+  title    = {Metafunctions for benchmarking in sensitivity analysis},
+  year     = {2020},
+  pages    = {107189},
+  volume   = {204},
+  abstract = {Comparison studies of global sensitivity analysis (GSA) approaches are limited in that they are performed on a single model or a small set of test functions, with a limited set of sample sizes and dimensionalities. This work introduces a ﬂexible ‘metafunction’ framework to benchmarking which randomly generates test problems of varying dimensionality and functional form using random combinations of plausible basis functions, and a range of sample sizes. The metafunction is tuned to mimic the characteristics of real models, in terms of the type of model response and the proportion of active model inputs. To demonstrate the framework, a comprehensive comparison of ten GSA approaches is performed in the screening setting, considering functions with up to 100 dimensions and up to 1000 model runs. The methods examined range from recent metamodelling approaches to elementary eﬀects and Monte Carlo estimators of the Sobol’ total eﬀect index. The results give a comparison in unprecedented depth, and show that on average and in the setting investigated, Monte Carlo estimators, particularly the VARS estimator, outperform metamodels. Indicatively, metamodels become competitive at around 10–20 runs per model input, but at lower ratios sampling-based approaches are more eﬀective as a screening tool.},
+  doi      = {10.1016/j.ress.2020.107189},
+}
+
+@Article{Kucherenko2011,
+  author   = {Sergei Kucherenko and Balazs Feil and Nilay Shah and Wolfgang Mauntz},
+  journal  = {Reliability Engineering {\&} System Safety},
+  title    = {The identification of model effective dimensions using global sensitivity analysis},
+  year     = {2011},
+  number   = {4},
+  pages    = {440--449},
+  volume   = {96},
+  abstract = {It is shown that the effective dimensions can be estimated at reasonable computational costs using variance based global sensitivity analysis. Namely, the effective dimension in the truncation sense can be found by using the Sobol’ sensitivity indices for subsets of variables. The effective dimension in the superposition sense can be estimated by using the ﬁrst order effects and the total Sobol’ sensitivity indices. The classiﬁcation of some important classes of integrable functions based on their effective dimension is proposed. It is shown that it can be used for the prediction of the QMC efﬁciency. Results of numerical tests verify the prediction of the developed techniques.},
+  doi      = {10.1016/j.ress.2010.11.003},
+}
+
+@Article{Kucherenko2009,
+  author   = {Sergei Kucherenko and M. Rodriguez-Fernandez and C. Patelides and N. Shah},
+  journal  = {Reliability Engineering {\&} System Safety},
+  title    = {Monte Carlo evaluation of derivative-based global sensitivity measures},
+  year     = {2009},
+  pages    = {1137--1148},
+  volume   = {94},
+  abstract = {A novel approach for evaluation of derivative-based global sensitivity measures (DGSM) is presented. It is compared with the Morris and the Sobol’ sensitivity indices methods. It is shown that there is a link between DGSM and Sobol’ sensitivity indices. DGSM are very easy to implement and evaluate numerically. The computational time required for numerical evaluation of DGSM is many orders of magnitude lower than that for estimation of the Sobol’ sensitivity indices. It is also lower than that for the Morris method. Efﬁciencies of Monte Carlo (MC) and quasi-Monte Carlo (QMC) sampling methods for calculation of DGSM are compared. It is shown that the superiority of QMC over MC depends on the problem’s effective dimension, which can also be estimated using DGSM.},
+  doi      = {10.1016/j.ress.2008.05.006},
+}
+
+@Article{Sudret2015,
+  author   = {B. Sudret and C.V. Mai},
+  journal  = {Reliability Engineering {\&} System Safety},
+  title    = {Computing derivative-based global sensitivity measures using polynomial chaos expansions},
+  year     = {2015},
+  pages    = {241--250},
+  volume   = {134},
+  abstract = {In the field of computer experiments sensitivity analysis aims at quantifying the relative importance of each input parameter (or combinations thereof) of a computational model with respect to the model output uncertainty. Variance decomposition methods leading to the well-known Sobol׳ indices are recognized as accurate techniques, at a rather high computational cost though. The use of polynomial chaos expansions (PCE) to compute Sobol׳ indices has allowed to alleviate the computational burden though. However, when dealing with large dimensional input vectors, it is good practice to first use screening methods in order to discard unimportant variables. The derivative-based global sensitivity measures (DGSMs) have been developed recently in this respect. In this paper we show how polynomial chaos expansions may be used to compute analytically DGSMs as a mere post-processing. This requires the analytical derivation of derivatives of the orthonormal polynomials which enter PC expansions. Closed-form expressions for Hermite, Legendre and Laguerre polynomial expansions are given. The efficiency of the approach is illustrated on two well-known benchmark problems in sensitivity analysis.},
+  doi      = {10.1016/j.ress.2014.07.009},
+}
+
+@Article{Sobol2009,
+  author   = {I.M. Sobol' and S. Kucherenko},
+  journal  = {Mathematics and Computers in Simulation},
+  title    = {Derivative based global sensitivity measures and their link with global sensitivity indices},
+  year     = {2009},
+  number   = {10},
+  pages    = {3009--3017},
+  volume   = {79},
+  abstract = {We introduce new global sensitivity measures called derivative based global sensitivity measures (DGSM). We also show that there is a link between DGSM and Sobol’ total sensitivity indices which makes this approach theoretically sound and general. It can be seen as the generalization of the Morris method. The computational time required for numerical evaluation of DGSM can be much lower than that for estimation of the Sobol’ sensitivity indices although it is problem dependent. The efficiency of the method can be further improved by using the automatic differentiation algorithm for calculation DGSM.},
+  doi      = {10.1016/j.matcom.2009.01.023},
+}
+
+@Article{Caflisch1998,
+  author   = {Russel E. Caflisch},
+  journal  = {Acta Numerica},
+  title    = {Monte Carlo and quasi-Monte Carlo methods},
+  year     = {1998},
+  pages    = {1--49},
+  volume   = {7},
+  abstract = {Monte Carlo is one of the most versatile and widely used numerical methods. Its convergence rate, O(N^−1/2), is independent of dimension, which shows Monte Carlo to be very robust but also slow. This article presents an introduction to Monte Carlo methods for integration problems, including convergence theory, sampling methods and variance reduction techniques. Accelerated convergence for Monte Carlo quadrature is attained using quasi-random (also called low-discrepancy) sequences, which are a deterministic alternative to random or pseudo-random sequences. The points in a quasi-random sequence are correlated to provide greater uniformity. The resulting quadrature method, called quasi-Monte Carlo, has a convergence rate of approximately O((log N)^k / N).
+For quasi-Monte Carlo, both theoretical error estimates and practical limitations are presented. Although the emphasis in this article is on integration, Monte Carlo simulation of rarefied gas dynamics is also discussed. In the limit of small mean free path (that is, the fluid dynamic limit), Monte Carlo loses its effectiveness because the collisional distance is much less than the fluid dynamic length scale. Computational examples are presented throughout the text to illustrate the theory. A number of open problems are described.},
+  doi      = {10.1017/s0962492900002804},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
